@@ -2,8 +2,8 @@ public class Bil2 {
 
     String bilNum;
     
-    public Bil2(){
-        bilNum = "DN82643";
+    public Bil2(String bilnummer){
+        bilNum = bilnummer;
     }
 
     public void bilMelding(){
