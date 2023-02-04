@@ -74,6 +74,22 @@ class Rutenett {
     }
 
     public void kobleAlleCeller(){
-        
+        for (int i=0; i<antRader; i++){
+            for (int j=0; j<antKolonner; j++){
+                settNaboer(i, j);
+            }
+        }
+    }
+
+    public int antallLevende(){
+        int antLev = 0;
+        for (int i=0; i<antRader; i++){
+            for (int j=0; j<antKolonner; j++){
+                if (hentCelle(i, j).erLevende()){
+                    antLev++;
+                }
+            }
+        }
+        return antLev;
     }
 }

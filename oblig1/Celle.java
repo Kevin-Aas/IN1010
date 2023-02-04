@@ -47,8 +47,8 @@ class Celle {
 
     public void tellLevendeNaboer(){
         antLevendeNaboer = 0;
-        for (Celle c : naboer){
-            if (c != null && c.levende){
+        for (Celle nabo : naboer){
+            if (nabo != null && nabo.levende){
                 antLevendeNaboer++;
             }
         }

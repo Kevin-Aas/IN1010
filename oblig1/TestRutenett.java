@@ -82,53 +82,52 @@ class TestRutenett {
 		System.out.println("testSettNaboer(): Alt riktig!");
     }
 
-    // private static void testKobleAlleCeller () {
-	// Rutenett testRutenett = new Rutenett(2, 2);  // 2 x 2 rutenett
-	// testRutenett.fyllMedTilfeldigeCeller();
-	// testRutenett.kobleAlleCeller();
+    private static void testKobleAlleCeller () {
+		Rutenett testRutenett = new Rutenett(2, 2);  // 2 x 2 rutenett
+		testRutenett.fyllMedTilfeldigeCeller();
+		testRutenett.kobleAlleCeller();
     
-	// int totaltAntallNaboer = 0;
-	// for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
-	//     for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
-	// 	totaltAntallNaboer += testRutenett.hentCelle(rx,kx).antNaboer;
-	//     }
-	// }
-	// sjekk("antall naboer i 2x2-rutenett skal være 12", totaltAntallNaboer==12);
+		int totaltAntallNaboer = 0;
+		for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
+			for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
+				totaltAntallNaboer += testRutenett.hentCelle(rx,kx).antNaboer;
+			}
+		}
+		sjekk("antall naboer i 2x2-rutenett skal være 12", totaltAntallNaboer==12);
 
-	// testRutenett = new Rutenett(3, 3);  // 3 x 3 rutenett
-	// testRutenett.fyllMedTilfeldigeCeller();
-	// testRutenett.kobleAlleCeller();
-    
-	// totaltAntallNaboer = 0;
-	// for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
-	//     for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
-	// 	totaltAntallNaboer += testRutenett.hentCelle(rx,kx).antNaboer;
-	//     }
-	// }
-	// sjekk("antall naboer i 3x3-rutenett skal være 40", totaltAntallNaboer==40);
+		testRutenett = new Rutenett(3, 3);  // 3 x 3 rutenett
+		testRutenett.fyllMedTilfeldigeCeller();
+		testRutenett.kobleAlleCeller();
+		
+		totaltAntallNaboer = 0;
+		for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
+			for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
+				totaltAntallNaboer += testRutenett.hentCelle(rx,kx).antNaboer;
+			}
+		}
+		sjekk("antall naboer i 3x3-rutenett skal være 40", totaltAntallNaboer==40);
 
-	// System.out.println("testKobleCeller(): Alt riktig!");
-    // }
+		System.out.println("testKobleCeller(): Alt riktig!");
+    }
 
-    // private static void testAntallLevende () {
-	// // Lag et tomt rutenett:
-	// Rutenett testRutenett = new Rutenett(3, 3);
-	// for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
-	//     for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
-	// 	testRutenett.rutene[rx][kx] = new Celle();
-	//     }
-	// }
+    private static void testAntallLevende () {
+		// Lag et tomt rutenett:
+		Rutenett testRutenett = new Rutenett(3, 3);
+		for (int rx = 0;  rx < testRutenett.antRader;  ++rx) {
+			for (int kx = 0;  kx < testRutenett.antKolonner;  ++kx) {
+				testRutenett.rutene[rx][kx] = new Celle();
+			}
+		}
 
-	// // Angi hvilke som skal vaere levende:
-	// testRutenett.hentCelle(0,0).settLevende();
-	// testRutenett.hentCelle(2,1).settLevende();
-	// testRutenett.hentCelle(0,2).settLevende();
-	// int antallLevende = testRutenett.antallLevende();
-	// sjekk("antallLevende(): antall levende skal være 3",
-	//       testRutenett.antallLevende()==3);
-    
-	// System.out.println("testAntallLevende(): Alt riktig!");
-    // }
+		// Angi hvilke som skal vaere levende:
+		testRutenett.hentCelle(0,0).settLevende();
+		testRutenett.hentCelle(2,1).settLevende();
+		testRutenett.hentCelle(0,2).settLevende();
+		int antallLevende = testRutenett.antallLevende();
+		sjekk("antallLevende(): antall levende skal være 3", antallLevende==3);
+		
+		System.out.println("testAntallLevende(): Alt riktig!");
+    }
 
     public static void main (String[] arg) {
 		System.out.println("** Test Rutenett **");
@@ -138,7 +137,7 @@ class TestRutenett {
 		testHentCelle();
 		testTegnRutenett();
 		testSettNaboer();
-		// testKobleAlleCeller();
-		// testAntallLevende();
+		testKobleAlleCeller();
+		testAntallLevende();
     }
 }
