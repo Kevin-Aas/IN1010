@@ -65,12 +65,10 @@ public class TestLegemiddel {
         if (vanlig2.id == 1) {
             System.out.println("Test 10 - Korrekt");
         } else {
-            System.out.println("Feil");
+            System.out.println("Test 10 - Feil");
         }
         
         System.out.println(vanlig2.toString());
         System.out.println(narkotisk1.toString());
-
-
     }
 }
