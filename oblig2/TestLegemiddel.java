@@ -67,8 +67,5 @@ public class TestLegemiddel {
         } else {
             System.out.println("Test 10 - Feil");
         }
-        
-        System.out.println(vanlig2.toString());
-        System.out.println(narkotisk1.toString());
     }
 }
