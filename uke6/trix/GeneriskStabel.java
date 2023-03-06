@@ -12,9 +12,9 @@ public class GeneriskStabel <E> {
         if (erTom()) {
             start = new Node(x);
         } else {
-            Node gjeldende = start;
+            Node forrige = start;
             start = new Node(x);
-            start.neste = gjeldende;
+            start.neste = forrige;
         }
     }
 
@@ -22,9 +22,9 @@ public class GeneriskStabel <E> {
         if (erTom()) {
             return null;
         }
-        Node gjeldende = start;
+        Node forrige = start;
         start = start.neste;
-        return gjeldende.data;
+        return forrige.data;
     }
 
     public boolean erTom() {
