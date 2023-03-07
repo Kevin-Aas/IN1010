@@ -8,8 +8,8 @@ public abstract class Resept {
 
     public Resept(Legemiddel legemiddel, Lege utskrivendeLege, int pasientId, int reit) {
         if (legemiddel instanceof Narkotisk && !(utskrivendeLege instanceof Spesialist)) {
-            System.out.println("**Vanlig lege kan ikke skrive ut resept for narkotiske legemidler**");
-            System.exit(0);
+            System.out.println("**Vanlig lege burde ikke skrive ut resept for narkotiske legemidler**");
+            // System.exit(0);
             // 'Kom ikke paa noen bedre maate aa implementer spesialister paa'
         }
         this.legemiddel = legemiddel;

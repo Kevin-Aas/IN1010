@@ -28,12 +28,12 @@ public class TestLegemiddel {
         } else {
             System.out.println("Test 4 - Feil");
         }
-        if (narkotisk1.id == 0) {
+        if (narkotisk1.id == 1) {
             System.out.println("Test 5 - Korrekt");
         } else {
             System.out.println("Test 5 - Feil");
         }
-        if (vanedannede1.id == 0) {
+        if (vanedannede1.id == 2) {
             System.out.println("Test 6 - Korrekt");
         } else {
             System.out.println("Test 6 - Feil");
@@ -62,7 +62,7 @@ public class TestLegemiddel {
         // Tester om id-en er riktig naar man lager flere instanser av samme klasse:
         // [Test 10]
         Vanlig vanlig2 = new Vanlig("Trigamonol", 29, 150);
-        if (vanlig2.id == 1) {
+        if (vanlig2.id == 3) {
             System.out.println("Test 10 - Korrekt");
         } else {
             System.out.println("Test 10 - Feil");
