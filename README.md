@@ -1,3 +1,4 @@
-IN1010 - Objektorientert programmering (Java)
+__IN1010 - Objektorientert programmering (Java)__
 
-Her finner du ukesoppgaver og innleveringer som jeg har gjort alene. 
+Har du lite tid, men ønsker å sjekke ut koden? 
+- Anbefales innlevering nr. 6 og nr. 7
